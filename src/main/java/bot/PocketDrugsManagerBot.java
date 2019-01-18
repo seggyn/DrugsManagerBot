@@ -26,7 +26,7 @@ public class PocketDrugsManagerBot extends TelegramLongPollingBot  {
 	    if (update.hasMessage() && update.getMessage().hasText()) {
 	        SendMessage message = new SendMessage()
 	                .setChatId(update.getMessage().getChatId())
-	                .setText("Hello!"); // hello-text from bot
+	                .setText("Hello!"); // welcome text
 	        try {
 	            execute(message);
 	        } catch (TelegramApiException e) {
